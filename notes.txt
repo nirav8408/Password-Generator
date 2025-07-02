@@ -1,0 +1,22 @@
+useCallback memoizes a function — meaning it remembers the same function between re-renders unless dependencies change.
+
+This ensures passwordGenerator only changes when:
+length
+numberAllowed
+charAllowed
+...change.
+
+If these don’t change, the function stays the same.
+
+means it runs passwordgenerator when changes occur like lenght char allowed number allowed etc
+
+
+useEffect 
+
+it runs passwordgenerator when changes occur
+
+
+
+useCallback ensures passwordGenerator isn’t recreated on every render.
+
+useEffect runs passwordGenerator() whenever the settings (length, options) change.
